@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.jumbotron h1{
+  text-align: center;
+}
+
+select {
+  display: inline;
+  margin: 10px;
+  justify-self: center;
+  padding: 8px;
+  color: #8e979f;
+  outline: white;
+}
+
+#table {
+  margin-top: auto;
+}
+
+#table th {
+  text-align: center;
+  font-size: 12px;
+
+}
+
+#table th:first-child,
+#table th:nth-child(2),
+#table th:nth-child(6) {
+  max-width: 70px;
+}
+
+

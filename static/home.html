@@ -1,0 +1,92 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amber's Apposite Analysis</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Access to Clean Drinking Water</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <select class="form-select" id="country" aria-label=".form-select-sm">
+                    <option selected>Select a Country</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select" id="region" aria-label=".form-select-sm">
+                    <option selected>Select a Region</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select" id="year" aria-label=".form-select-sm">
+                    <option selected>Select a Year</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <div id="table">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="table-head">Country</th>
+                            <th class="table-head">Year</th>
+                            <th class="table-head">Drinking Water Access %</th>
+                            <th class="table-head">Region</th>
+                            <th class="table-head">Coountry Code</th>
+                            <th class="table-head">Population</th>
+                            <th class="table-head">Bins</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--d3 Link-->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+
+    <!--plotly scripts-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!--Bootstrap Scripts-->
+
+
+    <!--Javascript Content-->
+    <script src="app.js"></script>
+
+    <script src="../clean_csv/water.csv"></script>
+
+</body>
+
+</html>
